@@ -1,0 +1,76 @@
+body{
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.music-player {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.player-controls button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    color: inherit;
+}
+
+.song-info {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#song-title {
+    margin-bottom: 5px;
+}
+
+.progress-container {
+    height: 5px;
+    background-color: #333;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+}
+
+#current-time, #duration {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.volume-control i {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+#volume-slider {
+    flex: 1;
+}
